@@ -12,10 +12,11 @@
       <title>{{ $title }}</title>
   </head>
   <body>
-    {{- partial "header.html" . -}}
+    {{- partial "header/header.html" . -}}
     <div id="content">
     {{- block "main" . }}{{- end }}
     </div>
-    {{- partial "footer.html" . -}}
+    {{- partial "footer/footer.html" . -}}
+    {{- partial "footer/js.html" . -}}
   </body>
 </html>
