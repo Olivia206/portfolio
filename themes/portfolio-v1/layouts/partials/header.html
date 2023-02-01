@@ -1,1 +1,17 @@
-ceci est un header
+<header id="document-header">
+  <nav aria-label="{{ i18n "commons.menu.main" }}">
+    <div class="container">
+      {{ range .Site.Menus.main }}
+        <a class="nav-link" href="{{ .URL }}">
+          {{ if .Pre }}
+            {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
+            {{ $icon }}
+          {{ end }}
+          {{ $text := print .Name | safeHTML }}
+          {{ $text }}
+        </a>
+      {{ end }}
+    </div>
+  </nav>
+  </header>
+  
