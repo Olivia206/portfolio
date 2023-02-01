@@ -1,6 +1,6 @@
 {{ define "main" }}
   <div class="container">
-    <h1>All posts for {{ .Type | singularize }} "{{ .Title }}"</h1>
+    <h1>Tous les projets de la catégorie <strong>{{ .Title }}</strong></h1>
     <ul>
       {{ range .Data.Pages }}
         <li>

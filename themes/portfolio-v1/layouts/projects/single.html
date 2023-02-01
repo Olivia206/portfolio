@@ -3,14 +3,6 @@
   <p>{{ .Date.Format "2 January 2006" }}</p>
   {{ .Content }}
 
-  <div class="categorie-group">
-    {{ range .Params.categories }}
-    <div class="categorie">
-      <span class="categorie-text">
-        <a href="/categories/{{. | urlize }}">{{.}}</a>
-      </span>
-    </div>
-  {{end}}
-  </div>
+  {{- partial "templates/categories.html" . -}}
 
 {{ end }}

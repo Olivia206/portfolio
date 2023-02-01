@@ -1,0 +1,9 @@
+<ul class="project-categories">
+  {{ range .Params.categories }}
+    <li>
+      <span>
+        <a href="/categories/{{. | urlize }}">{{.}}</a>
+      </span>
+    </li>
+  {{end}}
+</ul>
