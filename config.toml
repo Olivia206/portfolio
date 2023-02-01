@@ -1,4 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-themes = "portfolio-v1"
+title = 'Olivia Simonet • Portfolio'
+theme = "portfolio-v1"
+
+
