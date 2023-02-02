@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after
+    box-sizing: border-box
+    
+body 
+    background:
+        image: url("../assets/images/background.svg")
+        position: center
+        repeat: no-repeat
+        size: cover
+    color: $base-color
+    min-height: 100vh
+    
+ul
+    @include list-reset
+
+button 
+    @include button-reset

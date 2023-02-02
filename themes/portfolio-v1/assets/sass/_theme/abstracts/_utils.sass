@@ -1,0 +1,37 @@
+@function px2rem($size)
+    $remSize: $size / 16
+    @return #{$remSize}rem
+
+@function half($size)
+    @return calc(#{$size} / 2)
+
+@mixin container
+    margin-left: auto
+    margin-right: auto
+    max-width: $content-max-width
+    padding-left: half($content-margin-sm)
+    padding-right: half($content-margin-sm)
+    width: 100%
+    @include media-breakpoint-up(desktop)
+        padding-left: $content-margin
+        padding-right: $content-margin
+
+@mixin list-reset
+    list-style: none
+    padding: 0
+    margin: 0
+
+@mixin button-reset
+    appearance: none
+    background: transparent
+    border: none
+    border-radius: none
+    cursor: pointer
+    user-select: none
+
+@mixin link-terms
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-image: $primary-gradient
+    text-decoration: none
+
