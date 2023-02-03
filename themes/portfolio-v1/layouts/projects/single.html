@@ -1,5 +1,6 @@
 {{ define "main" }}
   <div class="container">
+    <img src="{{ .Params.Cover.Image }}" alt="{{ .Params.Cover.Alt }}">
     <h1>{{ .Params.Title }}</h1>
     <p>{{ .Date.Format "2 January 2006" }}</p>
     {{ .Content }}
