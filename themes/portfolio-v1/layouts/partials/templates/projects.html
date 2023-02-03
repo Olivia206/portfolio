@@ -1,0 +1,9 @@
+{{ with .Site.GetPage "/projects" }}
+<ul>
+    {{ range first 3 (.Pages.ByDate).Reverse }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a> - {{ .Date | time.Format ":date_long" }}
+        </li>
+    {{ end }}
+  </ul>
+{{ end }}
