@@ -1,13 +1,11 @@
 {{ define "main" }}
-<div class="container">
-    <h1>Tous les projets</h1>
+  <h1>Tous les projets</h1>
 
-    <ul>
-      {{ range first 3 (.Pages.ByDate).Reverse }}
-      <li>
-        <a href="{{ .Permalink }}">{{ .Title }}</a> - {{ .Date | time.Format ":date_long" }}
-      </li>
-    {{ end }}
-    </ul>
-  </div>
+  <ul>
+    {{ range first 3 (.Pages.ByDate).Reverse }}
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a> - {{ .Date | time.Format ":date_long" }}
+    </li>
+  {{ end }}
+  </ul>
 {{ end }}

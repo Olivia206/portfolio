@@ -24,3 +24,7 @@ theme = "portfolio-v1"
     pre = "tag"
     url = "/about/"
     weight = 4
+
+[taxonomies]
+  category = 'categories'
+  technology = 'technologies'

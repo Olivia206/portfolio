@@ -1,16 +1,17 @@
 <footer id="document-footer">
+  <div class="container">
     <div class="footer-legals">
-        <ul>
-            {{ range .Site.Menus.main }}
-                <li>
-                    <a class="nav-link" href="{{ .URL }}">
-                        {{ $text := print .Name | safeHTML }}
-                        {{ $text }}
-                    </a>
-                </li>
-            {{ end }}
-        </ul>
+      <ul>
+        {{ range .Site.Menus.main }}
+          <li>
+            <a class="nav-link" href="{{ .URL }}">
+              {{ $text := print .Name | safeHTML }}
+              {{ $text }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
     </div>
-
+  </div>
 </footer>
   

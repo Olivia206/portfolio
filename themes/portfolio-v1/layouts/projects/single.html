@@ -1,10 +1,19 @@
 {{ define "main" }}
-  <div class="container">
-    <img src="{{ .Params.Cover.Image }}" alt="{{ .Params.Cover.Alt }}">
+
+  {{ $image := .Resources.GetMatch (.Params.Cover.url) }}
+
+    
+    {{ with $image }}
+      <img src="{{ $image.RelPermalink }}">
+    {{ end }}
+    
     <h1>{{ .Params.Title }}</h1>
     <p>{{ .Date.Format "2 January 2006" }}</p>
+
+    {{- partial "templates/technologies.html" . -}}
+
     {{ .Content }}
 
     {{- partial "templates/categories.html" . -}}
-  </div>
+
 {{ end }}

@@ -1,12 +1,10 @@
 {{ define "main" }}
-  <div class="container">
-    <h1>Tous les projets de la catégorie <strong>{{ .Title }}</strong></h1>
-    <ul>
-      {{ range .Data.Pages }}
-        <li>
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </li>
-      {{ end }}
-    </ul>
-  </div>
+  <h1>Tous les projets de la catégorie <strong>{{ .Title }}</strong></h1>
+  <ul>
+    {{ range .Data.Pages }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
 {{ end}}

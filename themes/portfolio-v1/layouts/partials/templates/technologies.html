@@ -1,0 +1,7 @@
+<ul class="project-technologies">
+    {{ range .Params.technologies }}
+      <li>
+        <a href="/technologies/{{. | urlize }}">{{.}}</a>
+      </li>
+    {{end}}
+  </ul>
