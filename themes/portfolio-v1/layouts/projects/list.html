@@ -2,12 +2,12 @@
 
   {{- partial "header/hero.html" . -}}
   
-  <ul>
+  <ul class="project-list">
     {{ range first 3 (.Pages.ByDate).Reverse }}
-    <li>
-      <a href="{{ .Permalink }}">{{ .Title }}</a> - {{ .Date | time.Format ":date_long" }}
-    </li>
-  {{ end }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a> - {{ .Date | time.Format ":date_long" }}
+      </li>
+    {{ end }}
   </ul>
 
 {{ end }}

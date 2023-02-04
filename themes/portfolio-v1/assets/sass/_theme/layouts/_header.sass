@@ -13,20 +13,29 @@ body > header
             a
                 text-decoration: none
                 + a
-                    margin-left: $spacing-1
+                    margin-left: $spacing-0
+                    @include media-breakpoint-up(md)
+                        margin-left: $spacing-1
     
 .page__home
     .hero
+        margin-bottom: calc(#{$spacing-1} * 2)
         @include media-breakpoint-up(md)
             align-items: center
             justify-content: center
             display: flex
             width: 100%
+            margin-bottom: calc(#{$spacing-3} * 2)
         figure
-            height: 50vh
+            height: 30vh
             position: relative
+            margin: auto
+            width: fit-content
             @include media-breakpoint-up(md)
+                height: 50vh
                 margin-right: $spacing-3
+            @include media-breakpoint-down(md)
+                margin-bottom: $spacing-3
             &::before
                 -webkit-mask-image: url(../assets/images/mask-2.svg)
                 -webkit-mask-repeat: no-repeat
@@ -39,21 +48,28 @@ body > header
                 position: absolute
                 right: 0
                 top: 0
-                transform: translate(-15%, 10%)
+                transform: translateY(15%)
             img
                 -webkit-mask-image: url(../assets/images/mask-1.svg)
+                -webkit-mask-position: center
                 -webkit-mask-repeat: no-repeat
                 height: 100%
                 mask-image: url(../assets/images/mask-1.svg)
+                mask-position: center
                 mask-repeat: no-repeat
         hgroup
-            
+            @include media-breakpoint-down(md)
+                margin: auto
+                width: fit-content
             p
                 align-items: center
                 display: flex
                 justify-content: end
                 letter-spacing: 1px
                 text-transform: uppercase
+                @include media-breakpoint-down(md)
+                    justify-content: start
+                    margin-top: $spacing-0
                 &::before 
                     content: ""
                     width: 25%
