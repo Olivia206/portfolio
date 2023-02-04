@@ -19,6 +19,7 @@
   <body class="{{ $body_class }}">
     {{- partial "header/accessibility.html" -}}
     {{- partial "header/header.html" . -}}
+
     <main id="main" tabindex="-1">
       <div class="container">
         {{- block "main" . }}{{- end }}

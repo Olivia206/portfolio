@@ -6,8 +6,13 @@ body
         size: cover
         attachment: fixed
     color: $base-color
-    min-height: 200vh
     position: relative
+
+main
+    min-height: calc(100vh - #{$spacing-3})
+    padding: $spacing-2 0
+    @include media-breakpoint-up(desktop)
+        padding: $spacing-3 0
     
 .container
     @include container

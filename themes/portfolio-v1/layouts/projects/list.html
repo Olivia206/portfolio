@@ -1,6 +1,7 @@
 {{ define "main" }}
-  <h1>Tous les projets</h1>
 
+  {{- partial "header/hero.html" . -}}
+  
   <ul>
     {{ range first 3 (.Pages.ByDate).Reverse }}
     <li>
@@ -8,4 +9,5 @@
     </li>
   {{ end }}
   </ul>
+
 {{ end }}

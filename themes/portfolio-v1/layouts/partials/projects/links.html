@@ -1,0 +1,7 @@
+<ul>
+  {{ range .Params.links }}
+    <li>
+      <a title="{{ .title }}" href="{{.url}}" target="_blank">{{.title}}</a>
+    </li>
+  {{end}}
+</ul>

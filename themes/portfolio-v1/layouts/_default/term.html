@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <h1>Tous les projets de la catégorie <strong>{{ .Title }}</strong></h1>
+  {{- partial "header/hero.html" . -}}
   <ul>
     {{ range .Data.Pages }}
       <li>

@@ -4,10 +4,15 @@ date: 2023-02-01T01:39:12+01:00
 draft: false
 
 cover:
-    url: /static/assets/images/covers/placeholder.png
+    url: /assets/images/covers/placeholder.png
 
 categories: ["Personnels", "Fora"]
 technologies: ["HTML", "CSS"]
+
+links:
+    site: 
+        title: "Voir la prod hébergée en ligne"
+        url: "https://the-holiday-scam.forumactif.com/"
 
 ---
 
