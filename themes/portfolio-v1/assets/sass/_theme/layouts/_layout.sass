@@ -11,8 +11,13 @@ body
 main
     min-height: calc(100vh - #{$spacing-3})
     padding: $spacing-2 0
-    @include media-breakpoint-up(desktop)
+    @include media-breakpoint-up(md)
         padding: $spacing-3 0
-    
+    .container
+        > * + *
+            margin-top: $spacing-2
+            @include media-breakpoint-up(md)
+                margin-top: $spacing-3
+        
 .container
     @include container

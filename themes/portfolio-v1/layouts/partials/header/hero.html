@@ -1,8 +1,15 @@
 <header class="hero">
   {{ if not .IsHome }}
-  {{- partial "header/breadcrumbs.html" . -}}
+    {{- partial "header/breadcrumbs.html" . -}}
   {{ else }}
-  {{- partial "header/banner.html" . -}}
+    {{- partial "header/banner.html" . -}}
+  {{ end }}
+  {{ if .IsHome }}
+    <hgroup>
   {{ end }}
   <h1>{{ .Title }}</h1>
+  {{ if .IsHome }}
+      <p>{{ .Params.Subtitle }}</p>
+    </hgroup>
+  {{ end}}
 </header>

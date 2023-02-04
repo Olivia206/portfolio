@@ -1,4 +1,62 @@
 body > header
     border-bottom: 1px solid rgba(255,255,255, .1)
-    padding: $spacing-1 0
+    .container
+        align-items: center
+        display: flex
+        justify-content: space-between
+        margin: $spacing-1 0
+        .logo
+            height: 44px
+            img
+                height: 100%
+        nav 
+            a
+                text-decoration: none
+                + a
+                    margin-left: $spacing-1
     
+.page__home
+    .hero
+        @include media-breakpoint-up(md)
+            align-items: center
+            justify-content: center
+            display: flex
+            width: 100%
+        figure
+            height: 50vh
+            position: relative
+            @include media-breakpoint-up(md)
+                margin-right: $spacing-3
+            &::before
+                -webkit-mask-image: url(../assets/images/mask-2.svg)
+                -webkit-mask-repeat: no-repeat
+                background: white
+                bottom: 0
+                content: ""
+                left: 0
+                mask-image: url(../assets/images/mask-2.svg)
+                mask-repeat: no-repeat
+                position: absolute
+                right: 0
+                top: 0
+                transform: translate(-15%, 10%)
+            img
+                -webkit-mask-image: url(../assets/images/mask-1.svg)
+                -webkit-mask-repeat: no-repeat
+                height: 100%
+                mask-image: url(../assets/images/mask-1.svg)
+                mask-repeat: no-repeat
+        hgroup
+            
+            p
+                align-items: center
+                display: flex
+                justify-content: end
+                letter-spacing: 1px
+                text-transform: uppercase
+                &::before 
+                    content: ""
+                    width: 25%
+                    background: white
+                    height: 1px
+                    margin-right: $spacing-1
