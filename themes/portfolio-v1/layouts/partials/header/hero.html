@@ -1,6 +1,8 @@
 <header class="hero">
   {{ if not .IsHome }}
   {{- partial "header/breadcrumbs.html" . -}}
+  {{ else }}
+  {{- partial "header/banner.html" . -}}
   {{ end }}
   <h1>{{ .Title }}</h1>
 </header>
