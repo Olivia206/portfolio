@@ -20,8 +20,8 @@
     {{- partial "header/accessibility.html" -}}
     {{- partial "header/header.html" . -}}
 
-    <main id="main" tabindex="-1">
-      <div class="container">
+    <main id="main" tabindex="-1" id="barba-wrapper">
+      <div class="container barba-container">
         {{- block "main" . }}{{- end }}
       </div>
     </main>
