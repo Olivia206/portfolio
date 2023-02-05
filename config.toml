@@ -8,19 +8,24 @@ summaryLength = 10
 [menu]
   [[menu.main]]
     name = "Projets"
-    pre = "pen-tool"
     url = "/projects/"
     weight = 1
   [[menu.main]]
     name = "Contact"
-    pre = "tag"
     url = "/contact/"
     weight = 2
   [[menu.main]]
     name = "À propos"
-    pre = "tag"
     url = "/about/"
     weight = 3
+  [[menu.legal]]
+    name = "Mentions légales"
+    url = "/mentions-legales/"
+    weight = 1
+  [[menu.legal]]
+    name = "Contact"
+    url = "/plan-du-site/"
+    weight = 2
 
 [taxonomies]
   category = 'categories'

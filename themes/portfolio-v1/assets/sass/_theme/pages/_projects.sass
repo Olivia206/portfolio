@@ -2,7 +2,7 @@
     .project
         > * + *
             margin-top: $spacing-2
-            @include media-breakpoint-up(lg)
+            @include media-breakpoint-up(md)
                 margin-top: $spacing-3
         &__categories
             display: flex
@@ -22,13 +22,13 @@
                         
         &__presentation
             margin: $spacing-3 0
-            @include media-breakpoint-up(lg)
+            @include media-breakpoint-up(md)
                 border: 1px solid white
                 border-radius: 30px
                 overflow: hidden
             h3
                 margin: $spacing-1 0
-                @include media-breakpoint-up(lg)
+                @include media-breakpoint-up(md)
                     margin: $spacing-2 0
 
         &--top
@@ -43,29 +43,32 @@
                 position: center
             opacity: .9
             @include media-breakpoint-down(lg)
+                height: 50vh
+                margin-bottom: $spacing-2
+            @include media-breakpoint-down(md)
                 height: 30vh
                 border-radius: 30px
-                margin-bottom: $spacing-2
         &--summary
             @include media-breakpoint-up(lg)
                 display: flex
                 flex-direction: column
-                h2
+            h2
+                margin: $spacing-1 $spacing-1 0
+                @include media-breakpoint-up(md)
                     margin: $spacing-2 $spacing-2 0
-                > div
-                    flex: 1
+            > div
+                flex: 1
+                margin: $spacing-1
+                overflow: auto
+                @include media-breakpoint-up(md)
                     margin: $spacing-2
+                @include media-breakpoint-up(lg)
                     margin-right: calc(#{$spacing-2} - 10px)
                     padding-right: 10px
-                    overflow: auto
-                p + p
-                    margin-top: $spacing-0
-                    @include media-breakpoint-up(lg)
-                        margin-top: $spacing-1
         &--links
             background-color: rgba(255,255,255, .8)
             padding: $spacing-2
-            @include media-breakpoint-down(lg)
+            @include media-breakpoint-down(md)
                 border-radius: 20px
                 margin: $spacing-2 0
                 padding: $spacing-0
@@ -77,14 +80,14 @@
         ul
             li
                 padding: $spacing-1 0
-        @include media-breakpoint-up(lg)
+        @include media-breakpoint-up(md)
             ul 
                 display: flex
                 justify-content: space-between
                 li:first-of-type
                     span
                         @include icon($icon-arrow-left)
-                li:last-of-type
+                li:not(:first-of-type)
                     text-align: right
                     span
                         @include icon($icon-arrow-right, after)
