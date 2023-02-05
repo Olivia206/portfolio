@@ -7,7 +7,7 @@ preview: ""
 draft: false
 
 cover:
-    url: /assets/images/covers/placeholder.png
+    url: /assets/images/covers/damnatio-memoriae.png
     
 categories: ["Personnels", "Fora"]
 technologies: ["HTML", "CSS"]

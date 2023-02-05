@@ -40,9 +40,10 @@
                     flex: 1
         &--cover
             background: 
+                color: white
                 size: cover
                 position: center
-            opacity: .9
+            opacity: .8
             @include media-breakpoint-down(lg)
                 height: 50vh
                 margin-bottom: $spacing-2
@@ -81,7 +82,7 @@
         ul
             li
                 padding: $spacing-1 0
-        @include media-breakpoint-up(md)
+        @include media-breakpoint-up(sm)
             ul 
                 display: flex
                 justify-content: space-between
@@ -115,7 +116,7 @@ ul.project-list
         border: 1px solid white
         border-radius: 30px
         display: flex
-        flex-direction: row-reverse
+        flex-direction: column-reverse
         flex-shrink: 0
         flex-basis: calc(33% - #{$spacing-2})
         justify-content: flex-end
@@ -123,6 +124,7 @@ ul.project-list
         position: relative
         transition: background-color .3s ease
         @include media-breakpoint-up(md)
+            flex-direction: row-reverse
             height: 150px
         @include media-breakpoint-up(lg)
             flex-direction: column-reverse
@@ -143,13 +145,14 @@ ul.project-list
             background:
                 color: white
                 position: center
-                size: auto 100%
+                size: cover
             height: 150px
             opacity: .8
             overflow: hidden
             position: relative
             transition: background-size .3s ease, opacity .3s ease
             @include media-breakpoint-up(md)
+                background-size: auto 100%
                 flex: .5
                 height: 100%
             @include media-breakpoint-up(lg)

@@ -23,7 +23,7 @@ summaryLength = 10
     url = "/mentions-legales/"
     weight = 1
   [[menu.legal]]
-    name = "Contact"
+    name = "Plan du site"
     url = "/plan-du-site/"
     weight = 2
 

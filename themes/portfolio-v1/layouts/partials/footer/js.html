@@ -1,2 +1,33 @@
-{{ $js := resources.Get "js/main.js" | js.Build (dict "minify" hugo.IsProduction) | fingerprint }}
-<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+{{ $js := resources.Get "js/main.js" }}
+{{ $style := $js | resources.Minify }}
+
+{{/*  <script type="module" src="{{ $js.RelPermalink }}"></script>  */}}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/@barba/core"></script>
+
+<script>
+
+  {{/*  barba.init({
+    transitions: [{
+      preventRunning: true,
+      enter(data) {
+        gsap.to(data.current.container, {
+          opacity: 0,
+          display: "none"
+        });
+        data.next.container.classList.add("fixed");
+        return gsap.fromTo(data.next.container, {
+          clipPath: "polygon(0 0, 30% 0, 13% 100%, 0% 100%)"
+        }, {
+          clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+          duration: 2,
+          onComplete: () => {
+            data.next.container.classList.remove("fixed");
+          }
+        });
+      }
+    }]
+  });  */}}
+
+</script>
