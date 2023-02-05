@@ -1,9 +1,4 @@
 .projects__page 
-
-    main 
-        .container
-            
-
     ul.project-categories
         display: flex
         align-items: center
@@ -16,10 +11,13 @@
                 @include link-terms
 
 ul.project-list
-    display: flex
-    flex-wrap: wrap
-    gap: $spacing-2
-    justify-content: space-between
+    @include media-breakpoint-up(md)
+        display: flex
+        flex-wrap: wrap
+        gap: $spacing-1
+        justify-content: space-between
+        @include media-breakpoint-up(lg)
+            gap: $spacing-2
     > li
         background-color: rgba(255,255,255, 0)
         border: 1px solid white
@@ -32,6 +30,9 @@ ul.project-list
         overflow: hidden
         position: relative
         transition: background-color .3s ease
+        @include media-breakpoint-down(md)
+            &:not(:first-of-type)
+                margin-top: $spacing-1
         .content
             padding: $spacing-1
             h3
@@ -48,10 +49,12 @@ ul.project-list
             background:
                 position: center
                 size: 100%
-            height: 200px
+            height: 150px
             overflow: hidden
             position: relative
             transition: background-size .3s ease
+            @include media-breakpoint-up(md)
+                height: 200px
             ul
                 align-items: center
                 background: transparentize($dark-color, .3 )
