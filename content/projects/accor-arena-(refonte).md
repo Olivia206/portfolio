@@ -8,8 +8,8 @@ draft: false
 cover:
     url: /assets/images/covers/placeholder.png
 
-categories: ["Refonte", "Site web"]
-technologies: ["HTML", "CSS", "Javascript"]
+categories: ["Refonte", "Site web", "MMI"]
+technologies: ["HTML", "CSS", "Javascript", "Figma"]
 
 links:
   github:
