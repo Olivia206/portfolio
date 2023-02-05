@@ -6,7 +6,7 @@ preview: ""
 draft: false
 
 cover:
-    url: /assets/images/covers/placeholder.png
+    url: /assets/images/covers/souvenirs-orphee.png
 
 categories: ["Jeu vidéo", "Scénarisation", "MMI"]
 technologies: ["C sharp", "Unity"]

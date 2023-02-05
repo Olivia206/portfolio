@@ -6,7 +6,7 @@ preview: ""
 draft: false
 
 cover:
-    url: /assets/images/covers/placeholder.png
+    url: /assets/images/covers/roll-characters.png
 
 categories: ["Site web", "MMI"]
 technologies: ["HTML", "CSS", "Javascript", "Ruby on Rails"]

@@ -6,7 +6,7 @@ preview: ""
 draft: false
 
 cover:
-    url: /assets/images/covers/placeholder.png
+    url: /assets/images/covers/accor-arena.png
 
 categories: ["Refonte", "Site web", "MMI"]
 technologies: ["HTML", "CSS", "Javascript", "Figma"]

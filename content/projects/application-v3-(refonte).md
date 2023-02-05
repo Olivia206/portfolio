@@ -6,7 +6,7 @@ preview: ""
 draft: false
 
 cover:
-    url: /assets/images/covers/placeholder.png
+    url: /assets/images/covers/webike.jpg
 
 categories: ["Refonte", "Design", "UI/UX"]
 technologies: ["Figma"]

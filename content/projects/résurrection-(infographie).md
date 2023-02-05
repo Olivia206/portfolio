@@ -6,7 +6,7 @@ preview: ""
 draft: false
 
 cover:
-    url: /assets/images/covers/placeholder.png
+    url: /assets/images/covers/resurrection.png
 
 categories: ["Design", "Infographie", "Scénarisation", "Illustration", "MMI"]
 technologies: ["Illustrator", "Figma"]

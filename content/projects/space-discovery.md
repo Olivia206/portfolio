@@ -6,7 +6,7 @@ preview: ""
 draft: false
 
 cover:
-    url: /assets/images/covers/placeholder.png
+    url: /assets/images/covers/space-discovery.jpg
 
 categories: ["Jeu vidéo", "Illustration", "Scénarisation", "MMI"]
 technologies: ["C sharp", "Illustrator", "Unity"]
