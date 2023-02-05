@@ -1,12 +1,13 @@
 <div class="project">
+  {{- partial "projects/categories.html" . -}}
   <div class="project__presentation">
-    <div class="project-cover">
-      <img src="{{ .Params.cover.url }}" alt="{{.Params.cover.alt}}">
+    <div class="project--top">
+      <div class="project--cover" style="background-image: url({{ .Params.cover.url }});"></div>
+      <div class="project--summary">
+        <div>{{ .Content }}</div>
+      </div>
     </div>
-    <div class="project-summary">
-      <p>{{ .Content }}</p>
-      {{- partial "projects/links.html" . -}}
-    </div>
+    {{- partial "projects/links.html" . -}}
   </div>
   <div class="project__informations">
 
@@ -16,4 +17,3 @@
 </div>
 
   {{- partial "projects/technologies.html" . -}}
-  {{- partial "projects/categories.html" . -}}

@@ -1,4 +1,50 @@
 .projects__page 
+    .project
+        &__presentation
+            @include media-breakpoint-up(md)
+                border: 1px solid white
+                border-radius: 30px
+                overflow: hidden
+            h3
+                margin: $spacing-1 0
+                @include media-breakpoint-up(md)
+                    margin: $spacing-2 0
+
+        &--top
+            @include media-breakpoint-up(md)
+                display: flex
+                height: 90vh
+                > div
+                    flex: 1
+        &--cover
+            background: 
+                size: cover
+                position: center
+            opacity: .9
+            @include media-breakpoint-down(md)
+                height: 30vh
+                border-radius: 30px
+                margin-bottom: $spacing-2
+        &--summary
+            > div
+                @include media-breakpoint-up(md)
+                    height: calc(100% - (#{$spacing-2} * 2))
+                    margin: $spacing-2
+                    margin-right: calc(#{$spacing-2} - 10px)
+                    padding-right: 10px
+                    overflow: auto
+        &--links
+            background-color: rgba(255,255,255, .8)
+            padding: $spacing-2
+            @include media-breakpoint-down(md)
+                border-radius: 20px
+                margin: $spacing-2 0
+                padding: $spacing-0
+            a
+                color: $dark-color
+
+
+
     ul.project-categories
         display: flex
         align-items: center
