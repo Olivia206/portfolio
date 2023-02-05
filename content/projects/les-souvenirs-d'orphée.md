@@ -9,7 +9,7 @@ cover:
     url: /assets/images/covers/placeholder.png
 
 categories: ["Jeu vidéo", "Scénarisation", "MMI"]
-technologies: ["C#", "Unity"]
+technologies: ["C sharp", "Unity"]
 
 links:
   itchio:
