@@ -10,7 +10,7 @@ cover:
     url: /assets/images/covers/accor-arena.png
 
 categories: ["Refonte", "Site web", "MMI"]
-technologies: ["HTML", "CSS", "Javascript", "Figma"]
+technologies: ["HTML", "CSS", "Javascript", "Jekyll", "Bootstrap", "Figma"]
 
 links:
   github:

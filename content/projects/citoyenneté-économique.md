@@ -10,7 +10,7 @@ cover:
     url: /assets/images/covers/citoyennete-economique.png
 
 categories: ["Site web", "MMI"]
-technologies: ["HTML", "CSS", "Javascript", "Ruby on Rails"]
+technologies: ["HTML", "CSS", "Javascript", "Ruby"]
 
 links:
   github:

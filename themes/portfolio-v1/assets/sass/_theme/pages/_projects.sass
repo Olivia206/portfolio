@@ -80,12 +80,12 @@
             display: flex
             flex-wrap: wrap
             gap: $spacing-1
+            @include media-breakpoint-up(md)
+                gap: $spacing-2
             li
-                width: 50px
                 height: 50px
                 overflow: hidden
                 img
-                    aspect-ratio: 1/1
                     filter: grayscale(1)
                     height: 100%
                     opacity: .8
