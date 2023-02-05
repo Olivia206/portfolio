@@ -1,7 +1,8 @@
-<ul class="project-technologies">
+<h2>Technologies utilisées</h2>
+<ul class="project--technologies">
     {{ range .Params.technologies }}
       <li>
-        <a href="/technologies/{{. | urlize }}">{{.}}</a>
+        <a href="/technologies/{{. | urlize }}" title="{{.}}"><img src="/assets/images/icons/logo-{{lower . }}.svg" alt=""></a>
       </li>
     {{end}}
 </ul>

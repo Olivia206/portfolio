@@ -10,7 +10,7 @@ cover:
     url: /assets/images/covers/souvenirs-orphee.png
 
 categories: ["Jeu vidéo", "Scénarisation", "MMI"]
-technologies: ["C sharp", "Unity"]
+technologies: ["Csharp", "Unity"]
 
 links:
   itchio:

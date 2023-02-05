@@ -76,6 +76,23 @@
                 padding: $spacing-0
             a
                 color: $dark-color
+        &--technologies
+            display: flex
+            flex-wrap: wrap
+            gap: $spacing-1
+            li
+                width: 50px
+                height: 50px
+                overflow: hidden
+                img
+                    aspect-ratio: 1/1
+                    filter: grayscale(1)
+                    height: 100%
+                    opacity: .8
+                    transition: opacity .3s ease, filter .3s ease
+                a:hover
+                    img
+                        filter: grayscale(0)
     .projects-navigation
         border-bottom: 1px solid rgba(255,255,255, .3)
         border-top: 1px solid rgba(255,255,255, .3)
