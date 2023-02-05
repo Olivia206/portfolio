@@ -4,11 +4,9 @@
   {{ else }}
     {{- partial "header/banner.html" . -}}
   {{ end }}
-  {{ if .IsHome }}
+  {{ if or .IsHome .Params.Subtitle }}
     <hgroup>
-  {{ end }}
-  <h1>{{ .Title }}</h1>
-  {{ if .IsHome }}
+      <h1>{{ .Title }}</h1>
       <p>{{ .Params.Subtitle }}</p>
     </hgroup>
   {{ end}}

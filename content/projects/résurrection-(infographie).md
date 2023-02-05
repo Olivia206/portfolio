@@ -1,5 +1,6 @@
 ---
-title: Résurrection (infographie)
+title: Résurrection
+subtitle: Inphographie
 description: ""
 date: 2023-02-05T02:04:19.095Z
 preview: ""
