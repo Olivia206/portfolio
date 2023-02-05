@@ -1,27 +1,29 @@
 {{- if or .PrevInSection .NextInSection -}}
-  <nav class="posts-navigation" aria-label="">
+  <nav class="projects-navigation" aria-label="Navigation entre projets">
     <ul>
-      {{- if .PrevInSection -}}
-        {{with .Site.RegularPages.Prev . }}
-          <li class="previous">
+      {{- if .NextInSection -}}
+        {{with .Site.RegularPages.Next . }}
+          <li class="next">
             {{ $title := .Title -}}
-            <a href="{{.RelPermalink}}" title="Consulter le projet précédent">
-              <span>
-                Projet précédent
-              </span>
+            <span>
+              Projet suivant
+            </span>
+            <br>
+            <a href="{{.RelPermalink}}" title="{Consulter le projet précédent">
               {{- $title -}}
             </a>
           </li>
         {{end}}
       {{- end -}}
-      {{- if .NextInSection -}}
-        {{with .Site.RegularPages.Next . }}
-          <li class="next">
+      {{- if .PrevInSection -}}
+        {{with .Site.RegularPages.Prev . }}
+          <li class="previous">
             {{ $title := .Title -}}
-            <a href="{{.RelPermalink}}" title="{Consulter le projet précédent">
-              <span>
-                Projet suivant
-              </span>
+            <span>
+              Projet précédent
+            </span>
+            <br>
+            <a href="{{.RelPermalink}}" title="Consulter le projet précédent">
               {{- $title -}}
             </a>
           </li>

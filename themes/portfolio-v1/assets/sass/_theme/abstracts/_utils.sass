@@ -12,7 +12,7 @@
     padding-left: half($content-margin-sm)
     padding-right: half($content-margin-sm)
     width: 100%
-    @include media-breakpoint-up(md)
+    @include media-breakpoint-up(lg)
         padding-left: $content-margin
         padding-right: $content-margin
 
@@ -74,3 +74,14 @@
     transition: text-decoration-color .3s ease
     &:hover
         text-decoration-color: rgba(255,255,255,.6)
+
+@mixin icon($icon, $pseudo-element: before)
+    &::#{$pseudo-element}
+        content: '#{$icon}'
+        font-family: 'icomoon' !important
+        font-style: normal
+        font-variant: normal
+        font-weight: normal
+        line-height: 1
+        speak: never
+        text-transform: none

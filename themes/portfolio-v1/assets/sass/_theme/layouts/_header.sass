@@ -15,7 +15,7 @@ body > header
                 position: relative
                 + a
                     margin-left: $spacing-0
-                    @include media-breakpoint-up(md)
+                    @include media-breakpoint-up(lg)
                         margin-left: $spacing-1
                 &::after
                     background: white
@@ -34,7 +34,7 @@ body > header
 
 .breadcrumb
     margin-bottom: $spacing-1
-    @include media-breakpoint-up(md)
+    @include media-breakpoint-up(lg)
         margin-bottom: $spacing-3
     ol
         display: flex
@@ -51,7 +51,7 @@ body > header
 .page__home
     .hero
         margin-bottom: calc(#{$spacing-1} * 2)
-        @include media-breakpoint-up(md)
+        @include media-breakpoint-up(lg)
             align-items: center
             justify-content: center
             display: flex
@@ -60,10 +60,10 @@ body > header
         figure
             height: 30vh
             position: relative
-            @include media-breakpoint-up(md)
+            @include media-breakpoint-up(lg)
                 height: 50vh
                 margin-right: $spacing-3
-            @include media-breakpoint-down(md)
+            @include media-breakpoint-down(lg)
                 margin: 0 auto $spacing-3
                 width: fit-content
             &::before
@@ -83,7 +83,7 @@ body > header
 
 .hero
     hgroup
-        @include media-breakpoint-down(md)
+        @include media-breakpoint-down(lg)
             margin: auto
             width: fit-content
         p
@@ -93,7 +93,7 @@ body > header
             letter-spacing: 1px
             margin-top: $spacing-0
             text-transform: uppercase
-            @include media-breakpoint-down(md)
+            @include media-breakpoint-down(lg)
                 justify-content: start
                 margin-top: $spacing-1
             &::before 

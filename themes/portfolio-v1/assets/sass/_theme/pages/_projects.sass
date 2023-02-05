@@ -1,5 +1,9 @@
 .projects__page 
     .project
+        > * + *
+            margin-top: $spacing-2
+            @include media-breakpoint-up(lg)
+                margin-top: $spacing-3
         &__categories
             display: flex
             align-items: center
@@ -18,17 +22,17 @@
                         
         &__presentation
             margin: $spacing-3 0
-            @include media-breakpoint-up(md)
+            @include media-breakpoint-up(lg)
                 border: 1px solid white
                 border-radius: 30px
                 overflow: hidden
             h3
                 margin: $spacing-1 0
-                @include media-breakpoint-up(md)
+                @include media-breakpoint-up(lg)
                     margin: $spacing-2 0
 
         &--top
-            @include media-breakpoint-up(md)
+            @include media-breakpoint-up(lg)
                 display: flex
                 height: 80vh
                 > div
@@ -38,12 +42,12 @@
                 size: cover
                 position: center
             opacity: .9
-            @include media-breakpoint-down(md)
+            @include media-breakpoint-down(lg)
                 height: 30vh
                 border-radius: 30px
                 margin-bottom: $spacing-2
         &--summary
-            @include media-breakpoint-up(md)
+            @include media-breakpoint-up(lg)
                 display: flex
                 flex-direction: column
                 h2
@@ -56,24 +60,46 @@
                     overflow: auto
                 p + p
                     margin-top: $spacing-0
-                    @include media-breakpoint-up(md)
+                    @include media-breakpoint-up(lg)
                         margin-top: $spacing-1
         &--links
             background-color: rgba(255,255,255, .8)
             padding: $spacing-2
-            @include media-breakpoint-down(md)
+            @include media-breakpoint-down(lg)
                 border-radius: 20px
                 margin: $spacing-2 0
                 padding: $spacing-0
             a
                 color: $dark-color
-
-
-
-    
+    .projects-navigation
+        border-bottom: 1px solid rgba(255,255,255, .3)
+        border-top: 1px solid rgba(255,255,255, .3)
+        ul
+            li
+                padding: $spacing-1 0
+        @include media-breakpoint-up(lg)
+            ul 
+                display: flex
+                justify-content: space-between
+                li:first-of-type
+                    span
+                        @include icon($icon-arrow-left)
+                li:last-of-type
+                    text-align: right
+                    span
+                        @include icon($icon-arrow-right, after)
+                li
+                    padding: $spacing-2 0
+                    position: relative
+                    span
+                        @include meta
+                    a
+                        @include stretched-link
+                        @include light-underline
+                    
 
 ul.project-list
-    @include media-breakpoint-up(md)
+    @include media-breakpoint-up(lg)
         display: flex
         flex-wrap: wrap
         gap: $spacing-1
@@ -92,7 +118,7 @@ ul.project-list
         overflow: hidden
         position: relative
         transition: background-color .3s ease
-        @include media-breakpoint-down(md)
+        @include media-breakpoint-down(lg)
             &:not(:first-of-type)
                 margin-top: $spacing-1
         .content
@@ -112,7 +138,7 @@ ul.project-list
             overflow: hidden
             position: relative
             transition: background-size .3s ease, opacity .3s ease
-            @include media-breakpoint-up(md)
+            @include media-breakpoint-up(lg)
                 height: 200px
             ul
                 align-items: center
