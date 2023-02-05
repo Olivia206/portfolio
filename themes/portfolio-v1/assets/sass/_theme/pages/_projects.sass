@@ -54,6 +54,10 @@
                     margin-right: calc(#{$spacing-2} - 10px)
                     padding-right: 10px
                     overflow: auto
+                p + p
+                    margin-top: $spacing-0
+                    @include media-breakpoint-up(md)
+                        margin-top: $spacing-1
         &--links
             background-color: rgba(255,255,255, .8)
             padding: $spacing-2

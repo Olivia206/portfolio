@@ -33,6 +33,9 @@ body > header
                         transform: translateY(calc(#{$spacing-2} + 10px)) scale(1)
 
 .breadcrumb
+    margin-bottom: $spacing-1
+    @include media-breakpoint-up(md)
+        margin-bottom: $spacing-3
     ol
         display: flex
         list-style: none
@@ -77,22 +80,28 @@ body > header
                 @include image-mask("../assets/images/mask-1.svg", true)
                 height: 100%
                 max-width: unset
-        hgroup
+
+.hero
+    hgroup
+        @include media-breakpoint-down(md)
+            margin: auto
+            width: fit-content
+        p
+            align-items: center
+            display: flex
+            justify-content: end
+            letter-spacing: 1px
+            margin-top: $spacing-0
+            text-transform: uppercase
             @include media-breakpoint-down(md)
-                margin: auto
-                width: fit-content
-            p
-                align-items: center
-                display: flex
-                justify-content: end
-                letter-spacing: 1px
-                text-transform: uppercase
-                @include media-breakpoint-down(md)
-                    justify-content: start
-                    margin-top: $spacing-0
-                &::before 
-                    content: ""
-                    width: 25%
-                    background: white
-                    height: 1px
-                    margin-right: $spacing-1
+                justify-content: start
+                margin-top: $spacing-1
+            &::before 
+                content: ""
+                width: 25%
+                background: white
+                height: 1px
+                margin-right: $spacing-1
+body:not(.page__home)
+    .hero
+        width: fit-content
