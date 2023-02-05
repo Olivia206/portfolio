@@ -35,3 +35,33 @@
     background-image: $primary-gradient
     text-decoration: none
 
+@mixin image-mask($url, $centered: false)
+    -webkit-mask-image: url($url)
+    -webkit-mask-repeat: no-repeat
+    mask-image: url($url)
+    mask-position: center
+    @if $centered
+        -webkit-mask-position: center
+        mask-repeat: no-repeat
+
+@mixin stretched-link($pseudo-element: before)
+    &::#{$pseudo-element}
+        bottom: 0
+        content: ''
+        left: 0
+        position: absolute
+        right: 0
+        top: 0
+        z-index: 9
+
+@mixin animated-link ($pseudo-element: after)
+    background: white
+    bottom: 0
+    content: ""
+    height: 1px
+    left: 0
+    position: absolute
+    transform: scale(0)
+    transform-origin: right center
+    transition: transform .3s ease
+    width: 100%

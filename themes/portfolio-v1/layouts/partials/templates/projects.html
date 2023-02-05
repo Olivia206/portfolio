@@ -1,12 +1,13 @@
 {{ with .Site.GetPage "/projects" }}
 
   <section>
-    <h2>Dernières expérimentations</h2>
+    <hgroup>
+      <h2>Dernières expérimentations</h2>
+      <a href="/projects">Découvrir tous mes projets</a>
+    </hgroup>
     <ul class="project-list">
       {{ range first 3 (.Pages.ByDate).Reverse }}
-        <li>
-          <a href="{{ .Permalink }}">{{ .Title }}</a> - {{ .Date | time.Format ":date_long" }}
-        </li>
+        {{- partial "projects/item.html" . -}}
       {{ end }}
     </ul>
   </section>

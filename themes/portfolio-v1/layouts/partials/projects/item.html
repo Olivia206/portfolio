@@ -1,0 +1,17 @@
+<li>
+  <div class="content">
+    <h3>
+      <a href="{{ .Permalink }}" title="Découvrir les détails du projet {{ .Title }}">{{ .Title }}</a>
+    </h3>
+    <p>{{ .Summary }}</p>
+  </div>
+  <div class="media" style="background-image: url({{ .Params.Cover.url }})">
+    {{ if .Params.technologies }}
+      <ul>
+        {{ range .Params.technologies }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </div>
+</li>

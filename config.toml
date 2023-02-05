@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'Olivia Simonet • Portfolio'
 theme = "portfolio-v1"
 
+summaryLength = 10
+
 [menu]
   [[menu.main]]
     name = "Projets"

@@ -3,10 +3,8 @@
   {{- partial "header/hero.html" . -}}
   
   <ul class="project-list">
-    {{ range first 3 (.Pages.ByDate).Reverse }}
-      <li>
-        <a href="{{ .Permalink }}">{{ .Title }}</a> - {{ .Date | time.Format ":date_long" }}
-      </li>
+    {{ range (.Pages.ByDate).Reverse }}
+      {{- partial "projects/item.html" . -}}
     {{ end }}
   </ul>
 

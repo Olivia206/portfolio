@@ -16,3 +16,61 @@
                 @include link-terms
 
 ul.project-list
+    display: flex
+    flex-wrap: wrap
+    gap: $spacing-2
+    justify-content: space-between
+    > li
+        background-color: rgba(255,255,255, 0)
+        border: 1px solid white
+        border-radius: 30px
+        display: flex
+        flex-shrink: 0
+        flex-basis: calc(33% - #{$spacing-2})
+        flex-direction: column-reverse
+        justify-content: flex-end
+        overflow: hidden
+        position: relative
+        transition: background-color .3s ease
+        .content
+            padding: $spacing-1
+            h3
+                margin-bottom: calc(#{$spacing-1} / 2)
+                a
+                    @include stretched-link
+                    text-decoration-color: rgba(255,255,255,.3)
+                    text-decoration-thickness: .5px
+                    text-underline-offset: 4px
+                    transition: text-decoration-color .3s ease
+                    &:hover
+                        text-decoration-color: rgba(255,255,255,.6)
+        .media
+            background:
+                position: center
+                size: 100%
+            height: 200px
+            overflow: hidden
+            position: relative
+            transition: background-size .3s ease
+            ul
+                align-items: center
+                background: transparentize($dark-color, .3 )
+                backdrop-filter: blur(3px)
+                bottom: 0
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                opacity: 0
+                position: absolute
+                left: 0
+                right: 0
+                top: 0
+                transition: opacity .3s ease
+                * + *
+                    margin-left: $spacing-0
+        &:hover
+            background-color: rgba(255,255,255, .1)
+            .media
+                background-size: 120%
+                ul
+                    opacity: 1
