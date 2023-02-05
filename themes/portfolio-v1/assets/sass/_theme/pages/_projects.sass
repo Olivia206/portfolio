@@ -5,11 +5,12 @@
             @include media-breakpoint-up(md)
                 margin-top: $spacing-3
         &__categories
-            display: flex
             align-items: center
+            display: flex
+            flex-wrap: wrap
+            column-gap: $spacing-0
+            row-gap: $spacing-1
             li
-                + li
-                    margin-left: 10px
                 a 
                     background-color: rgba(255,255,255, 0)
                     border: 1px solid white
@@ -114,18 +115,25 @@ ul.project-list
         border: 1px solid white
         border-radius: 30px
         display: flex
+        flex-direction: row-reverse
         flex-shrink: 0
         flex-basis: calc(33% - #{$spacing-2})
-        flex-direction: column-reverse
         justify-content: flex-end
         overflow: hidden
         position: relative
         transition: background-color .3s ease
+        @include media-breakpoint-up(md)
+            height: 150px
+        @include media-breakpoint-up(lg)
+            flex-direction: column-reverse
+            height: unset
         @include media-breakpoint-down(lg)
             &:not(:first-of-type)
                 margin-top: $spacing-1
         .content
             padding: $spacing-1
+            @include media-breakpoint-up(md)
+                flex: 1
             h3
                 margin-bottom: calc(#{$spacing-1} / 2)
                 a
@@ -141,7 +149,11 @@ ul.project-list
             overflow: hidden
             position: relative
             transition: background-size .3s ease, opacity .3s ease
+            @include media-breakpoint-up(md)
+                flex: .5
+                height: 100%
             @include media-breakpoint-up(lg)
+                flex: unset
                 height: 200px
             ul
                 align-items: center
