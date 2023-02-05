@@ -3,7 +3,7 @@
   {{- partial "header/hero.html" . -}}
 
   <ul>
-    {{ range .Data.Pages }}
+    {{ range sort .Data.Pages ".Params.title" }}
       <li>
         <a href="{{ .Permalink }}">{{ .Title }}</a>
       </li>

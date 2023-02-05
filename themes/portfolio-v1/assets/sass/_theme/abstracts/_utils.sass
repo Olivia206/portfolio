@@ -29,10 +29,10 @@
     cursor: pointer
     user-select: none
 
-@mixin link-terms
+@mixin gradient-text($gradient)
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
-    background-image: $primary-gradient
+    background-image: $gradient
     text-decoration: none
 
 @mixin image-mask($url, $centered: false)
@@ -65,3 +65,12 @@
     transform-origin: right center
     transition: transform .3s ease
     width: 100%
+
+@mixin light-underline
+    text-decoration:
+        color: rgba(255,255,255,.3)
+        thickness: .5px
+    text-underline-offset: 4px
+    transition: text-decoration-color .3s ease
+    &:hover
+        text-decoration-color: rgba(255,255,255,.6)

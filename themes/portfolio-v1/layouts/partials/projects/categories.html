@@ -1,5 +1,5 @@
 {{ if .Params.categories }}
-  <ul class="project-categories">
+  <ul class="project__categories">
     {{ range .Params.categories }}
       <li>
         <a href="/categories/{{. | urlize }}">{{.}}</a>

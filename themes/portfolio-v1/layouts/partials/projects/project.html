@@ -4,16 +4,12 @@
     <div class="project--top">
       <div class="project--cover" style="background-image: url({{ .Params.cover.url }});"></div>
       <div class="project--summary">
+        <h2>Le projet</h2>
         <div>{{ .Content }}</div>
       </div>
     </div>
     {{- partial "projects/links.html" . -}}
   </div>
-  <div class="project__informations">
-
-  </div>
-
+  {{- partial "projects/technologies.html" . -}}
   {{- partial "projects/navigation.html" . -}}
 </div>
-
-  {{- partial "projects/technologies.html" . -}}

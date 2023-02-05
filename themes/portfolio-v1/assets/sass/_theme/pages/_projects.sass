@@ -1,6 +1,23 @@
 .projects__page 
     .project
+        &__categories
+            display: flex
+            align-items: center
+            li
+                + li
+                    margin-left: 10px
+                a 
+                    background-color: rgba(255,255,255, 0)
+                    border: 1px solid white
+                    border-radius: $spacing-1
+                    padding: calc(#{$spacing-0} / 2) $spacing-0
+                    text-decoration: none
+                    transition: background-color .3s ease
+                    &:hover
+                        background-color: rgba(255,255,255, .6)
+                        
         &__presentation
+            margin: $spacing-3 0
             @include media-breakpoint-up(md)
                 border: 1px solid white
                 border-radius: 30px
@@ -13,7 +30,7 @@
         &--top
             @include media-breakpoint-up(md)
                 display: flex
-                height: 90vh
+                height: 80vh
                 > div
                     flex: 1
         &--cover
@@ -26,9 +43,13 @@
                 border-radius: 30px
                 margin-bottom: $spacing-2
         &--summary
-            > div
-                @include media-breakpoint-up(md)
-                    height: calc(100% - (#{$spacing-2} * 2))
+            @include media-breakpoint-up(md)
+                display: flex
+                flex-direction: column
+                h2
+                    margin: $spacing-2 $spacing-2 0
+                > div
+                    flex: 1
                     margin: $spacing-2
                     margin-right: calc(#{$spacing-2} - 10px)
                     padding-right: 10px
@@ -45,16 +66,7 @@
 
 
 
-    ul.project-categories
-        display: flex
-        align-items: center
-        li
-            background: $dark-color
-            padding: 5px 10px
-            + li
-                margin-left: 10px
-            a 
-                @include link-terms
+    
 
 ul.project-list
     @include media-breakpoint-up(md)
@@ -85,12 +97,7 @@ ul.project-list
                 margin-bottom: calc(#{$spacing-1} / 2)
                 a
                     @include stretched-link
-                    text-decoration-color: rgba(255,255,255,.3)
-                    text-decoration-thickness: .5px
-                    text-underline-offset: 4px
-                    transition: text-decoration-color .3s ease
-                    &:hover
-                        text-decoration-color: rgba(255,255,255,.6)
+                    @include light-underline
         .media
             background:
                 color: white

@@ -32,6 +32,19 @@ body > header
                         transform-origin: left center
                         transform: translateY(calc(#{$spacing-2} + 10px)) scale(1)
 
+.breadcrumb
+    ol
+        display: flex
+        list-style: none
+        li 
+            + li
+                margin-left: $spacing-0
+                &::before
+                    content: "•"
+                    margin-right: $spacing-0
+            a
+                @include light-underline
+
 .page__home
     .hero
         margin-bottom: calc(#{$spacing-1} * 2)
