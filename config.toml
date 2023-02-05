@@ -1,4 +1,4 @@
-baseURL = 'http://oliviasimonet.com/'
+baseURL = 'https://oliviasimonet.netlify.app/'
 languageCode = 'en-us'
 title = 'Olivia Simonet • Portfolio'
 theme = "portfolio-v1"
