@@ -7,7 +7,7 @@
       {{ if ne .Type "sitemap" }}
         {{ $permalink := .Permalink }}
         <h2>
-          <a href="{{ $permalink }}">{{ safeHTML .Type }}</a>
+          <a href="{{ $permalink }}">{{ safeHTML .Type | humanize}}</a>
         </h2>
         <ul>
           {{ range where .Site.Pages "Section" .Type }}
