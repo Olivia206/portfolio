@@ -1,4 +1,55 @@
 footer
     background: $dark-color
-    height: 100vh
+    display: flex
+    flex-direction: column
+    min-height: 100vh
     padding: $spacing-3 0
+    .container:first-of-type
+        flex: 1
+        @include media-breakpoint-up(md)
+            display: flex
+            justify-content: space-between
+            gap: $spacing-3
+            > * 
+                flex: 1
+        .footer-about
+            p
+                margin-top: $spacing-1
+            a
+                @include light-underline
+        ul
+            &.footer-menu
+                li
+                    margin-bottom: $spacing-2
+                    text-align: right
+                a
+                    font-family: $headings-font-family
+                    +font-size(40px)
+                    position: relative
+                    text-decoration: none
+                    &::after
+                        background: white
+                        bottom: 0
+                        content: ""
+                        height: 1px
+                        left: 0
+                        position: absolute
+                        transform: scale(0)
+                        transform-origin: right center
+                        transition: transform .3s ease
+                        width: 100%
+                    &:hover
+                        &::after
+                            transform-origin: left center
+                            transform: scale(1)
+    .container:last-of-type
+        margin-top: auto
+        ul
+            display: flex
+            gap: $spacing-0
+            a
+                @include light-underline
+            li + li::before
+                content: "—"
+                margin-right: $spacing-0
+    
