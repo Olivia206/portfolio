@@ -7,7 +7,7 @@ preview: ""
 draft: false
 
 cover:
-    url: /assets/images/covers/placeholder.png
+    url: /assets/images/covers/navetteK7.png
 
 categories: ["Motion Design", "Vidéo", "Design", "Scénarisation"]
 technologies: ["Première Pro", "After Effects", "Figma"]
