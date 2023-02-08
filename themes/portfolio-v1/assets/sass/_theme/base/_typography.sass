@@ -1,3 +1,8 @@
+@mixin meta
+    font-size: px2rem(10)
+    letter-spacing: 1px
+    text-transform: uppercase
+        
 body
     font-family: $body-font-family
     -moz-osx-font-smoothing: grayscale
@@ -28,11 +33,19 @@ h2
 h3
     +font-size(22px)
 
-@mixin meta
-    font-size: px2rem(10)
-    letter-spacing: 1px
-    text-transform: uppercase
-
+section
+    hgroup
+        a   
+            @include meta
+            @include light-underline
+            @include icon($icon-arrow-right, after)
+            +font-size(12px)
+            &::after
+                display: inline-table
+                padding-left: half($spacing-0)
+                transition: padding-left .4s ease
+            &:hover::after
+                padding-left: $spacing-0
 
 p + p
     margin-top: $spacing-0
