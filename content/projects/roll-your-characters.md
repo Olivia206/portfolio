@@ -14,11 +14,13 @@ technologies: ["HTML", "CSS", "Javascript", "Ruby"]
 
 links:
   github:
+    type: github
     title: "Consulter le code source sur Github"
     url: https://github.com/Olivia206/ProjetGestionJDR
   site: 
-      title: "Voir la prod hébergée en ligne"
-      url: https://rollyourcharacters.osc-fr1.scalingo.io/
+    type: site
+    title: "Voir la prod hébergée en ligne"
+    url: https://rollyourcharacters.osc-fr1.scalingo.io/
 ---
 
 Lorem ipsum

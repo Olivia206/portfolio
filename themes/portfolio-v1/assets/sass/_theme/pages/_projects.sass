@@ -68,13 +68,61 @@
                     padding-right: 10px
         &--links
             background-color: rgba(255,255,255, .8)
+            display: flex
+            gap: $spacing-1
             padding: $spacing-2
             @include media-breakpoint-down(md)
                 border-radius: 20px
                 margin: $spacing-2 0
                 padding: $spacing-0
+            li
+                overflow: hidden
+                position: relative
+                border-radius: 30px
             a
-                color: $dark-color
+                @include meta
+                align-items: center
+                background-color: transparentize($dark-color, .1)
+                border-radius: 30px
+                color: white
+                display: flex
+                letter-spacing: 1px
+                overflow: hidden
+                padding: half($spacing-0) $spacing-0
+                text-decoration: none
+                &::before,
+                &::after
+                    border-radius: 100%
+                    content: ""
+                    height: 8px
+                    width: 8px
+                    position: relative
+                &.behance::after, &.behance::before
+                    background-color: $behance
+                &.github::after, &.github::before
+                    background-color: $github
+                &.site::after, &.site::before
+                    background-color: $site
+                &.youtube::after, &.youtube::before
+                    background-color: $youtube
+                &.itch::after, &.itch::before
+                    background-color: $itch
+                &::before
+                    transition: background-color .3s ease
+                    z-index: 2
+                &::after
+                    position: absolute
+                    transition: .5s ease
+                    z-index: 1
+                span 
+                    margin-left: $spacing-0
+                    position: relative
+                    z-index: 2
+                &:hover
+                    &::after
+                        transform: scale(20)
+                    &::before
+                        background-color: $dark-color
         &--technologies
             display: flex
             flex-wrap: wrap

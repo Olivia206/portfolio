@@ -14,9 +14,11 @@ technologies: ["Csharp", "Illustrator", "Unity"]
 
 links:
   itchio:
+    type: itch
     title: "Consulter la fiche détaillée du jeu sur itch.io"
     url: https://olivia206.itch.io/space-discovery
   behance:
+    type: behance
     title: "Consulter la présentation sur Behance"
     url: https://www.behance.net/gallery/136308741/SPACE-DISCOVERY
 

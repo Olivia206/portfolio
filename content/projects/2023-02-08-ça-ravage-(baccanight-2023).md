@@ -13,11 +13,29 @@ technologies: ["HTML", "CSS", "Javascript", "Lottie", "After Effects"]
 
 links:
   github:
+    type: github
     title: "Consulter le code source sur Github"
     url: https://github.com/Olivia206/Baccanight
   site: 
+      type: site
       title: "Voir la prod hébergée en ligne"
       url: "https://caravage-baccanight-2023.netlify.app/"
 ---
 
 Jeu vidéo créé dans le cadre de la Baccanight 2023 du Musée des Beaux Arts de Bordeaux, par un groupe d'étudiantes de la formation MMI (promo 2024).
+
+### Les attentes
+
+### Réalisation
+
+### Équipe
+
+MANHES Clara — Illustratrice, motion designer
+
+SICARD-RAZAKA Auriane-Mirana — Illustratrice, narrative designer
+
+SIMONET Olivia — Développeuse, narrative designer
+
+TELUSMA Nehémia — Développeuse, narrative designer, UX/UI designer
+
+TRAVERS Ayline — Illustratrice, narrative designer, UX/UI designer

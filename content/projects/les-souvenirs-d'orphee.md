@@ -14,12 +14,15 @@ technologies: ["Csharp", "Unity"]
 
 links:
   itchio:
+    type: itch
     title: "Consulter la fiche détaillée du jeu sur itch.io"
     url: https://ayliine.itch.io/les-souvenirs-dorphee
   youtube:
+    type: youtube
     title: "Visionner le making of du projet"
     url: https://youtu.be/cSfXHTOBAFo
   github:
+    type: github
     title: "Consulter le code source sur Github"
     url: https://github.com/tmiia/experience_joueur
 

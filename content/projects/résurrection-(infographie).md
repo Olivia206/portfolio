@@ -14,6 +14,7 @@ technologies: ["Illustrator", "Figma"]
 
 links:
   behance:
+    type: behance
     title: "Consulter la présentation sur Behance"
     url: https://www.behance.net/gallery/143096911/Infographie-Rsurrection
 

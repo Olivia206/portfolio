@@ -14,9 +14,11 @@ technologies: ["HTML", "CSS", "Javascript", "Jekyll", "Bootstrap", "Figma"]
 
 links:
   github:
+    type: github
     title: "Consulter le code source sur Github"
     url: https://github.com/Refonte-Accord-Arena/AccorArenaRefonte
   site: 
+      type: site
       title: "Voir la prod hébergée en ligne"
       url: "https://accor-arena.netlify.app/"
 ---

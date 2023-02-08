@@ -14,6 +14,7 @@ technologies: ["Première Pro", "After Effects", "Figma"]
 
 links:
   youtube:
+    type: youtube
     title: "Consulter la vidéo finale"
     url: https://www.youtube.com/watch?v=RyQa8-OePlA
 ---

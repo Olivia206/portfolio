@@ -14,6 +14,7 @@ technologies: ["Première Pro", "After Effects", "Illustrator"]
 
 links:
   youtube:
+    type: youtube
     title: "Consulter la vidéo finale"
     url: https://www.youtube.com/watch?v=6DklHuysJ4s
 ---

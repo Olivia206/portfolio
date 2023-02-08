@@ -1,7 +1,9 @@
 <ul class="project--links">
   {{ range .Params.links }}
     <li>
-      <a title="{{ .title }} — lien externe" href="{{.url}}" target="_blank">{{.title}}</a>
+      <a class="{{ .type }}" title="{{ .title }} — lien externe" href="{{.url}}" target="_blank">
+        <span>{{ .type }}</span>
+      </a>
     </li>
   {{end}}
 </ul>
