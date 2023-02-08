@@ -26,6 +26,30 @@ summaryLength = 10
     name = "Plan du site"
     url = "/plan-du-site/"
     weight = 2
+  [[menu.social]]
+    name = "Github"
+    url = "https://github.com/Olivia206"
+    title = "Consulter mon profil Github — lien externe"
+    pre = "/assets/images/icons/icon-social-github.png"
+    weight = 1
+  [[menu.social]]
+    name = "Linkedin"
+    url = "https://www.linkedin.com/in/olivia-simonet-3847aa1aa/"
+    title = "Consulter mon profil Linkedin — lien externe"
+    pre = "/assets/images/icons/icon-social-linkedin.png"
+    weight = 1
+  [[menu.social]]
+    name = "Behance"
+    url = "https://www.behance.net/oliviasimonet"
+    title = "Consulter mon profil Behance — lien externe"
+    pre = "/assets/images/icons/icon-social-behance.png"
+    weight = 1
+  [[menu.social]]
+    name = "Codepen"
+    title = "Consulter mon Codepen — lien externe"
+    pre = "/assets/images/icons/icon-social-codepen.svg"
+    url = "https://codepen.io/Elicanto"
+    weight = 1
 
 [taxonomies]
   category = 'categories'

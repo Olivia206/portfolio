@@ -1,0 +1,9 @@
+<ul class="footer-social">
+  {{ range .Site.Menus.social }}
+    <li>
+      <a href="{{ .URL }}" title="{{ .Title }}">
+        <img src="{{ .Pre }}" alt="">
+      </a>
+    </li>
+  {{ end }}
+</ul>
