@@ -25,6 +25,10 @@ links:
     type: github
     title: "Consulter le code source sur Github"
     url: https://github.com/tmiia/experience_joueur
+  site:
+    type: site
+    title: "Accès au jeu hébergé en libre (WebGL)"
+    url: https://souvenirsdorphee.netlify.app/
 
 ---
 
