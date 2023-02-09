@@ -18,7 +18,7 @@ links:
     url: https://github.com/Olivia206/Baccanight
   site: 
       type: site
-      title: "Voir la prod hébergée en ligne"
+      title: "Voir la prod hébergée en ligne (optimisée pour mobile)"
       url: "https://caravage-baccanight-2023.netlify.app/"
 ---
 
